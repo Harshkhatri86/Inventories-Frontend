@@ -24,7 +24,7 @@ const Input = ({ name ,type, placeholder, value, onChange, error, autoFocus, sta
         }
     }, [autoFocus]);
 
-    return <div data-testid ="Input-test-id">
+    return <div  className="w-full" data-testid ="Input-test-id">
         <div >
             {startIcon && <div className="icon start-icon">{startIcon}</div>}
             <label htmlFor="">{placeholder} <span>*</span></label>
@@ -36,7 +36,7 @@ const Input = ({ name ,type, placeholder, value, onChange, error, autoFocus, sta
                 onChange={onChange}
                 style={{ borderColor: error ? 'red' : ''}}
                 ref={inputRef}
-                className='InputBox'
+                className='w-full h-12 p-3 InputBox'
             />
             {endIcon && <div className="icon end-icon">{endIcon}</div>}
             {error && <span className="ErrorClass">{error}</span>}
