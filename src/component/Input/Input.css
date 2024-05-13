@@ -1,0 +1,16 @@
+.InputBox{
+    border : 1px solid ; 
+    border-color: var(--border-color);
+    border-radius: 5px;
+    width: 100%;
+    height: 2rem;
+    padding: 5px;
+}
+.InputBox:focus{
+    outline: var(--border-color);
+    border-color: var(--border-color) ;
+}
+
+.ErrorClass{
+    color: red; 
+}

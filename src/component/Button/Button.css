@@ -1,0 +1,20 @@
+.Primary{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+}
+
+.Focused{
+    box-shadow: 0 0 10px 0px var(--shadow-color);
+    border: none;
+}
+
+.Secondary{
+    border: 1px solid var(--border-color);
+}
+
+.Primary:focus,
+.Secondary:focus {
+    outline: var(--border-color); /* Remove default focus outline */
+    border-color: var(--border-color); /* Set border color to transparent */
+}
