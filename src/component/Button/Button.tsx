@@ -24,7 +24,7 @@ function Button({ title, isPrimary, onClick }: ButtonProps) {
         onClick(e);
     }
 
-    return <div className="w-full" data-testid="button-test-id">
+    return <div style={{width : "100%"}} data-testid="button-test-id">
         <button ref={buttonRef} 
             onMouseEnter={() => setFocus(true)}
             onMouseLeave={() => setFocus(false)}
