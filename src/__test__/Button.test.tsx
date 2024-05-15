@@ -1,5 +1,7 @@
 import { screen , render } from "@testing-library/react";
 import Button from "../component/Button/Button";
+import React from "react";
+
 
 describe("Test the button component" , () =>{
     test( "testing by id", () =>{

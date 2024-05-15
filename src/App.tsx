@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
+import { Box } from '@mui/material';
+import AppBarComp from './component/AppBar/AppBar';
 
 function App() {
   return (
-    <div className="App">
-      <h1 className='text-3xl font-bold underline text-nowrap'>This is a heading</h1>
-    </div>
+    <Box data-testid = "App-test-id">
+      <AppBarComp/>
+    </Box>
   );
 }
 
