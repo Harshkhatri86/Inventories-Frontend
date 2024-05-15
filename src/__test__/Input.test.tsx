@@ -1,5 +1,6 @@
 import {screen, render , act} from '@testing-library/react' ;
 import Input from '../component/Input/Input';
+import React from "react";
 
 describe("Test the Input component" , () =>{
     test("testing by Id" , () =>{
